@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oussama\\Desktop\\CompteBancaire\\CompteBancaire\\CompteBancaire.csproj": {}
+    "C:\\Users\\oussama\\Desktop\\POO\\C#\\CompteBancaire\\CompteBancaire\\CompteBancaire.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oussama\\Desktop\\CompteBancaire\\CompteBancaire\\CompteBancaire.csproj": {
+    "C:\\Users\\oussama\\Desktop\\POO\\C#\\CompteBancaire\\CompteBancaire\\CompteBancaire.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oussama\\Desktop\\CompteBancaire\\CompteBancaire\\CompteBancaire.csproj",
+        "projectUniqueName": "C:\\Users\\oussama\\Desktop\\POO\\C#\\CompteBancaire\\CompteBancaire\\CompteBancaire.csproj",
         "projectName": "CompteBancaire",
-        "projectPath": "C:\\Users\\oussama\\Desktop\\CompteBancaire\\CompteBancaire\\CompteBancaire.csproj",
+        "projectPath": "C:\\Users\\oussama\\Desktop\\POO\\C#\\CompteBancaire\\CompteBancaire\\CompteBancaire.csproj",
         "packagesPath": "C:\\Users\\oussama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oussama\\Desktop\\CompteBancaire\\CompteBancaire\\obj\\",
+        "outputPath": "C:\\Users\\oussama\\Desktop\\POO\\C#\\CompteBancaire\\CompteBancaire\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

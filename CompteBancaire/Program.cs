@@ -7,19 +7,24 @@ namespace CompteBancaire
         static void Main(string[] args)
         {
             Client clt = new Client("Miraoui", "Oussama", "Casa");
-            Compte cpt = new Compte(4000,clt);
-            Compte cpt2 = new Compte(4000, clt);
+            Client clt2 = new Client("Mehdi", "Hamid", "Fes");
+
+
+            MAD md = new MAD(40000);
+            MAD md1 = new MAD(45000);
+
+            Compte cpt = new Compte(md,clt);
+            Compte cpt2 = new Compte(md1, clt);
 
 
             //Console.WriteLine("Apres depot: ");
-            //cpt.Crediter(400);
+            //MAD montant = new MAD(5000);
+            //cpt.Crediter(montant);
+
             //cpt.Print();
 
-            //Console.WriteLine("Apres retrait: ");
-            //cpt.Debiter(3000);
-            //cpt.Print();
-
-            cpt.Virement(cpt2, 2000);
+            MAD montant = new MAD(5000);
+            cpt.Virement(cpt2, montant);
             cpt.Print();
             cpt2.Print();
 

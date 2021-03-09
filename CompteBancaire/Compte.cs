@@ -6,44 +6,50 @@ namespace CompteBancaire
 {
     class Compte
     {
-        private static int num = 0;
+        private static int cpt = 0;
         private int numCpt;
-        private double solde;
         private Client titulaire;
+        private MAD solde;
         
         public Compte()
         {
-            this.numCpt = num;
+            this.numCpt = cpt;
         }
-        public Compte(double s, Client t)
+        public Compte(MAD s, Client t)
         {
-            this.numCpt = ++num;
+            this.numCpt = ++cpt;
             this.solde = s;
             this.titulaire = t;
         }
         public void Print()
         {
-            Console.WriteLine("NumCpt:"+this.numCpt+ ", solde: "+this.solde);
+            this.titulaire.Print();
+            Console.WriteLine("NumCpt:" + this.numCpt);
+            this.solde.Print();
+
         }
-        public void Crediter(double mt)
+        public bool Crediter(MAD mt)
         {
-            if (mt > 0)
-            {
-                this.solde += mt;
-            }
+            this.solde += mt;
+            return true;
         }
-        public void Debiter(double mt)
+        public bool Debiter(MAD mt)
         {
             if (this.solde >= mt)
             {
                 this.solde -= mt;
+                return true;
             }
+            return false;
         }
 
-        public void Virement(Compte cpt, double mt)
+        public void Virement(Compte cpt, MAD mt)
         {
-            this.Debiter(mt);
-            cpt.Crediter(mt);
+            if (this.Debiter(mt))
+            {
+                this.Debiter(mt);
+                cpt.Crediter(mt);
+            }
         }
     }
 }
