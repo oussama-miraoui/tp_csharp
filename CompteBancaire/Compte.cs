@@ -10,7 +10,7 @@ namespace CompteBancaire
         private int numCpt;
         private Client titulaire;
         private MAD solde;
-        
+
         public Compte()
         {
             this.numCpt = cpt;
@@ -47,7 +47,6 @@ namespace CompteBancaire
         {
             if (this.Debiter(mt))
             {
-                this.Debiter(mt);
                 cpt.Crediter(mt);
             }
         }
